@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/serlogo.png">
+
+</head>
+
+<body>
+    <!-- =====================================
+         CABEÇALHO: LOGO E MENU
+    ====================================== -->
+    <header class="cabecalho">
+
+        <div class="container">
+
+            <!-- Logo da empresa -->
+            <div class="logo">
+                <img src="../img/logo.jpg" alt="Logo da SilveAgro">
+            </div>
+
+            <!-- Menu de navegação -->
+            <nav class="menu">
+
+                <a href="index.html" class="ativo">Início</a>
+
+                <a href="sobre.html">Sobre nós</a>
+
+                <!-- Menu suspenso de serviços -->
+                <details class="dropdown">
+
+                    <summary>
+                        Serviços
+                        <span class="seta">▼</span>
+                    </summary>
+
+                    <div class="opcoes">
+                        <a href="agricultura.html">Agricultura</a>
+                        <a href="pecuaria.html">Pecuária</a>
+                    </div>
+
+                </details>
+
+                <a href="contato.html">Contato</a>
+
+                <a href="profissionais.html">Profissionais</a>
+                
+                <a href="login.html">Login</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="pagina-contato">
+
+        <section class="formulario-container">
+
+            <header class="titulo-formulario">
+
+                <h1>Solicite sua Assistência Técnica</h1>
+
+                <p>
+                    Preencha o formulário abaixo.
+                    Nossa equipe de profissionais entrará
+                    em contato com você.
+                </p>
+
+            </header>
+
+            <form class="formulario-contato"
+                  action="https://formsubmit.co/SEU_EMAIL"
+                  method="POST">
+
+                <!-- Configurações de envio -->
+                <input type="hidden" name="_subject"
+                       value="Nova solicitação - SilveAgro">
+
+                <input type="hidden" name="_captcha"
+                       value="false">
+
+                <!-- Nome do cliente -->
+                <div class="campo">
+
+                    <label for="nome">Nome completo:</label>
+
+                    <input type="text"
+                           id="nome"
+                           name="nome"
+                           placeholder="Digite seu nome completo"
+                           required>
+
+                </div>
+
+                <!-- E-mail -->
+                <div class="campo">
+
+                    <label for="email">E-mail:</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Digite seu e-mail"
+                           required>
+
+                </div>
+
+                <!-- Telefone -->
+                <div class="campo">
+
+                    <label for="telefone">Telefone / WhatsApp:</label>
+
+                    <input type="tel"
+                           id="telefone"
+                           name="telefone"
+                           placeholder="(00) 00000-0000"
+                           required>
+
+                </div>
+
+                <!-- Cidade -->
+                <div class="campo">
+
+                    <label for="cidade">Cidade:</label>
+
+                    <input type="text"
+                           id="cidade"
+                           name="cidade"
+                           placeholder="Digite sua cidade"
+                           required>
+
+                </div>
+
+                <!-- Estado -->
+                <div class="campo">
+
+                    <label for="estado">Estado:</label>
+
+                    <select id="estado" name="estado" required>
+
+                        <option value="">Selecione seu estado</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="CE">Ceará</option>
+                        <option value="BA">Bahia</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="PI">Piauí</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="Outro">Outro</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Área de atendimento -->
+                <div class="campo">
+
+                    <label for="area">Área de atendimento:</label>
+
+                    <select id="area" name="area" required>
+
+                        <option value="">Selecione uma área</option>
+                        <option value="Agricultura">Agricultura</option>
+                        <option value="Pecuária">Pecuária</option>
+                        <option value="Solo">Solo</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Tipo de assistência -->
+                <div class="campo">
+
+                    <label for="servico">Tipo de assistência:</label>
+
+                    <select id="servico" name="servico" required>
+
+                        <option value="">Selecione o serviço</option>
+                        <option value="Avicultura">Avicultura</option>
+                        <option value="Suinocultura">Suinocultura</option>
+                        <option value="Bovinocultura">Bovinocultura</option>
+                        <option value="Caprinocultura">Caprinocultura</option>
+                        <option value="Ovinocultura">Ovinocultura</option>
+                        <option value="Piscicultura">Piscicultura</option>
+                        <option value="Agricultura">Agricultura</option>
+                        <option value="Análise do solo">Análise do solo</option>
+                        <option value="Outro">Outro</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Mensagem -->
+                <div class="campo">
+
+                    <label for="mensagem">
+                        Descreva sua necessidade:
+                    </label>
+
+                    <textarea id="mensagem"
+                              name="mensagem"
+                              rows="6"
+                              placeholder="Explique como podemos ajudar..."
+                              required></textarea>
+
+                </div>
+
+                <!-- Botão -->
+                <button type="submit" class="botao-enviar">
+
+                    Enviar solicitação
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+     <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <p>Contato | SilveAgro</p>
+
+            <nav class="links-rodape">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="profissionais.html">Profissionais</a>
+            </nav>
+
+        </div>
+
+        <p class="direitos">
+            Todos os direitos reservados. © 2026 SilveAgro.
+        </p>
+
+    </footer>
+
+</body>
+</html>

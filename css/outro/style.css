@@ -1,0 +1,225 @@
+
+/* =========================================
+   CONTAINER: organiza a logo e o menu
+========================================= */
+
+.container {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+/* =========================================
+   MENU PRINCIPAL
+========================================= */
+
+.menu {
+    width: 40%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    align-items: center; /* Mantém todos na mesma altura */
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   LINKS PRINCIPAIS
+========================================= */
+
+.menu > a {
+    padding: 8px;
+
+    font-size: 20px;
+
+    color: #173d25;
+
+    font-weight: 600;
+
+    font-family: Arial, sans-serif;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+/* 
+    Atenção a um detalhe importante: 
+
+O seletor .menu > a significa: 
+
+.menu: procura um elemento com a classe menu. 
+
+>: seleciona somente os filhos diretos. 
+
+a: seleciona os links HTML. 
+
+Ou seja, ele estiliza os links que estão diretamente dentro do menu.  */
+
+ 
+}
+
+
+/* Efeito ao passar o mouse */
+
+.menu > a:hover {
+    color: #5b941e;
+}
+
+
+/* =========================================
+   MENU SUSPENSO DE SERVIÇOS
+========================================= */
+
+.dropdown {
+    position: relative;
+
+    margin: 0;
+
+    padding: 0;
+
+    flex-shrink: 0; /* Evita que o menu diminua */
+}
+
+
+/* Nome Serviços e setinha */
+
+.dropdown summary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    list-style: none;
+
+    cursor: pointer;
+
+    color: #173d25;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    font-family: Arial, sans-serif;
+
+    padding: 8px;
+
+    white-space: nowrap;
+}
+
+
+/* Remove a setinha padrão do navegador */
+
+.dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Setinha ao lado de Serviços */
+
+.seta {
+    font-size: 11px;
+
+    transition: transform 0.3s;
+}
+
+
+/* Gira a setinha quando o menu abre */
+
+.dropdown[open] .seta {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================
+   OPÇÕES: AVICULTURA E SUINOCULTURA
+========================================= */
+
+.opcoes {
+
+    position: absolute; /* Não aumenta a altura do menu */
+
+    top: 100%; /* Aparece abaixo de Serviços */
+
+    left: 0;
+
+    margin-top: 10px;
+
+    width: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 10px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+
+    z-index: 100;
+}
+
+
+/* Links das opções */
+
+.opcoes a {
+
+    display: block;
+
+    padding: 10px;
+
+    font-size: 15px;
+
+    color: #173d25;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    white-space: nowrap;
+}
+
+
+/* Efeito ao passar o mouse nas opções */
+
+.opcoes a:hover {
+
+    color: #5b941e;
+
+    background-color: #edf5e8;
+}

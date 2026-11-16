@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - SilveAgro</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/serlogo.png">
+</head>
+
+<body>
+
+    <main class="pagina-login">
+
+        <section class="painel-login">
+
+            <!-- Logo da empresa -->
+            <div class="logo-login">
+                <img src="../img/serlogo.png" alt="Logo da SilveAgro">
+            </div>
+
+            <h1>Bem-vindo!</h1>
+
+            <p class="subtitulo">
+                Acesse sua conta SilveAgro
+            </p>
+
+            <!-- Formulário de login -->
+
+
+
+            
+            <form id="form-login" action="admin.html" method="GET">
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required>
+                </div>
+
+                <div class="recuperar-senha">
+                    <a href="recuperarsenha.html">
+                        Esqueceu sua senha?
+                    </a>
+                </div>
+
+                <!-- Mensagem de erro -->
+                <p id="mensagem" class="mensagem" role="alert"></p>
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+            <!-- Arquivo JavaScript -->
+            <script src="../js/login.js"></script>
+
+
+            <p class="rodape-login">
+                © 2026 SilveAgro - Todos os direitos reservados.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
